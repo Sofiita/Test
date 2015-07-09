@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Prueba PedidosYA</title>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   		<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a id="logo"href="#">SofiaHeit</a>
+				<ul>
+					<li>
+						<a href="#hero">Quien Soy?</a>
+					</li>
+					<li>
+						<a href="#porque">Porqué Pedidos YA?</a>
+					</li>
+					<li>
+						<a href="#haciendo">Haciendo...</a>
+					</li>					
+				</ul>	
+			</nav>
+		</header>
+		<section id="hero">
+			<div class="one">
+				<h1>Hola Pedidos Ya!</h1>
+				<p id="intro">Mi nombre es Sofia Heit, tengo 21 años y soy desarrolladora front-end hace.. no mucho tiempo. Soy autodidacta, y me gusta aprender sobre nuevas tecnologias.
+					En mi tiempo libre me gusta salir a patinar, correr y escuchar musica.</p>
+				<a href="#registrarme" id="registrarse" class="buttonNav">Ingresá</a>
+			</div>
+			<div id="bgpopUp" class="bgpopUp"></div>
+  
+		      <div id="registrarme" class="formRegistro">
+		                    <a href='#cerrar' id="cerrar">Cerrar</a>
+		                     <form id="registrarme" method="get" action="" accept-charset="UTF-8">
+		                         <fieldset>
+		                               <legend>Datos para registrarse</legend>   
+		                       <label for="text">Nombre</label>
+		                                   <input type="text" size="30" id="nombre" name="nombre" required placeholder="Escribe tu nombre" />
+		                       <label for="email">Email</label>
+		                                   <input type="email" size="30" id="email"  name="email" required placeholder="Escribe tu email" />
+		                       <label for="password">Contraseña</label>
+		                                  <input type="password" size="30" id="Contraseña" name="password" required placeholder="Escribe tu Contraseña" />
+		                      <label for="password">Confirmar Contraseña</label>
+		                                  <input type="password" size="30" id="Confirmar Contraseña" name="password_confirmation" required placeholder="Confirmar tu Contraseña" />
+		              <input class="buttonF" type="submit" value="Registrarme" name="submit" />
+		        </div>
+
+		  		</div>
+		</section>
+		<section id="porque">
+			<div class="two">
+				<i class="fa fa-exclamation"></i>
+				<p>Pedidos Ya junto con otros emprendimientos y productos están cambiando la dinamica de la vida de las personas en un Uruguay que creíamos lento y dificil de cambiar. Yo quiero ser parte de este cambio y sentir que con mi trabajo ayudo en ese proceso.</p>
+			</div>
+			<div class="two">
+				<i class="fa fa-exclamation"></i>
+				<p>Porque pienso que trabajar no es simplemente marcar un horario, quiero que mi jornada laboral de todos los dias este rodeada de gente joven, en un ambiente dinamico y divertido que me permita preguntar y aprender de los que llevan mas tiempo en el mundo IT.</p>
+			</div>		
+		</section>
+		<section id="#haciendo">
+			<div class="three">
+				<p>El uso de imágenes en formato SVG, que se ajustan a cualquier tipo de dispositivo sin perder calidad, ya que independientes a las resoluciones de las pantallas.</p>				
+			</div>
+
+			<div class="three">
+				<p>Colocando el codigo .js debajo de todo el contenido HTML, para que el navegador cargue y ejecute el codigo de comportamiento luego del que da estuctura y estilo.</p>				
+			</div>
+
+			<div class="three">
+				<p>Utilizando <a href="http://fortawesome.github.io/Font-Awesome/">Fontawesome</a> para el contenido de iconos ya que son escalables y se puede manejar sus estilos con CSS, como si fuese una fuente más.</p>				
+			</div>
+
+			<div class="three">
+				<p>Usando las nuevas etiquetas HTML como header, footer, article y nav, para manejar la semántica en el codigo permitiéndonos describir el significado del contenido.</p>				
+			</div>
+
+			<div class="three">
+				<p>La funcionalidad agregada en la ultima version de HTML llamada Drag&Drop para mover y arrastrar objetos dentro de un sitio web.</p>				
+			</div>
+
+			<div class="three">
+				<p>Poniendo en funcionamiento nuevas APIS que van desde el uso de Geolocalizacion hasta Local Storage entre otras.</p>
+			</div>
+
+			<div class="three">
+				<p>Haciendo transiciones, para poder darle efectos a ciertos objetos en un tiempo determinado.</p>
+			</div>
+
+			<div class="three">
+				<p>Colocando transformaciones en objetos y dandoles un determinado corpontamiento.</p>
+			</div>
+
+			<div class="three">
+				<p>Poniendo en practica el uso de selectores de clases, de tipos y de elementos en las hojas de estilo css.</p>				
+			</div>
+		</section>
+		<footer>
+			<div class="one">
+				<div id="contact">
+					<i class="fa fa-envelope-square"></i>								
+					<i class="fa fa-linkedin-square"></i>
+					<i class="fa fa-github-square"></i>
+					<i class="fa fa-twitter-square"></i>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+	    $("a#registrarse").on('click', function () {
+	        $("#bgpopUp").fadeIn(500, function () {
+	            $("#bgpopUp").css('display', 'block');
+	            $('#registrarme').fadeIn(500);
+	            window.scrollTo(0, 0);
+	            disableScroll()
+			});
+	    });
+
+		function closePopup() {
+			$('#bgpopUp').fadeOut(500);
+			$('#registrarme').fadeOut(500);
+			enableScroll();
+		}
+
+		$('#cerrar').on('click', closePopup);
+		$('#bgpopUp').on('close', closePopup)
+
+	});
+
+	function disableScroll() {
+		window.scrollBackup = window.onscroll;
+		window.onscroll = function () { window.scrollTo(0, 0); };
+	}
+
+	function enableScroll() {
+		window.onscroll = window.scrollBackup;
+	}
+
+	 $('form#registrarme').on('submit', function () {
+	          var usuario = {};
+	          var datos = $(this).serializeArray();
+	          for(var i in datos) {
+	            usuario[datos[i].name] = datos[i].value;
+	          }
+
+	          guardarUsuario(usuario);
+
+	          $('#bgpopUp').trigger('close');
+	          init();
+
+	          return false;
+	        });
+
+	        function init() {
+	          if(obtenerUsuario()) {
+	            $("a#registrarse").hide();
+	            
+	          }
+	        }
+
+	        init();
+
+	      });
+
+	      $('a.smooth').on('click', function(e) {
+	        var $link = $(this);
+	        var anchor  = $link.attr('href');
+	        $('#registrarme').stop().animate({
+	          scrollTop: $(anchor).offset().top
+	        }, 1000);
+	      });
+	      
+	</script>
+</html>
