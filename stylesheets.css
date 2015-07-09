@@ -12,7 +12,6 @@ header {
 	height: 65px;
 	width: 100%;
 	background-color: #ffffff;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
 }
 
 nav {
@@ -33,19 +32,17 @@ nav ul li {
 }
 
 nav ul li a {
-	color: #ebe3dd;
+	color: #45668f;
   	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
+	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 }
 
 #logo {
 	float: left;
-	color: #ff7680;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
+	color: #45668f;
+	font-family: 'Just Another Hand', cursive;
+	font-size: 55px;
 	text-decoration: none;
 	margin-left: 20px;
 	margin-top: 13px;
@@ -53,35 +50,30 @@ nav ul li a {
 
 section {
 	width: 100%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	margin-top: 25px;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
 }
 
 #hero {
 	width: 100%;
 	float: left;
-	background-image: url(sofi1200.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
 }
 
 .one {
 	float: left;
-
 }
 
 h1 {
-	color: #ebe3dd;
-	font-size: 40px;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
+	color: #ffffff;
+	text-shadow: 2px 2px 1.5px #dbdbdb;
+	font-size: 60px;
 	text-align: center;
 }
 
 #intro {
 	font-size: 30px;
-	color: #ebe3dd;
+	color: #ffffff;
 	text-align: center;
 	margin-top: 30%;
 	padding: 200px 100px 200px 100px;	
@@ -89,10 +81,10 @@ h1 {
 }
 
 #registrarse {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #ffffff;
 	font-size: 25px;
-	background: #ff7680;
+	background: #45668f;
 	padding: 20px 30px 20px 30px;
 	text-decoration: none;
 	float: left;
@@ -100,11 +92,10 @@ h1 {
 	margin-left: 46%;
 	margin-bottom: 5%;
 	border-radius: 2px 2px 2px 2px;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
 }
 .formRegistro {
-	color: #ebe3dd;
-	font-family: 'Open Sans', sans-serif;
+	color: #45668f;
+	font-family: 'Roboto', sans-serif;
    	margin-left: 38%;
    	float: left;
    	width: 22%;
@@ -112,8 +103,8 @@ h1 {
 }
 
 .formRegistro .buttonF {
-	color: #ebe3dd;
-	font-family: 'Open Sans', sans-serif;
+	color: #45668f;
+	font-family: 'Roboto', sans-serif;
    	font-size: 15px;
    	position: relative;
    	margin: 0 auto;
@@ -125,8 +116,8 @@ h1 {
 	float: right;
 	display: inline;
 	border: 3px;
-	color: #ebe3dd;
-	font-family: 'Open Sans', sans-serif;
+	color: #45668f;
+	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	font-weight: bold;
 	font-style: normal;
@@ -185,15 +176,14 @@ h1 {
 
 #porque {
 	float: left;
-	background-color: #000;
 }
 
 h2 {
 	font-size: 35px;
 	text-align: center;
-	color: #ebe3dd;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
+	color: #ffffff;
 	margin-bottom: 65px;
+	text-shadow: 1px 1px 1.5px #dbdbdb;
 }
 
 .two {
@@ -205,13 +195,8 @@ h2 {
 	padding: 50px;
 	text-align: center;
 	font-size: 20px;
-	color: #ebe3dd;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
-}
-
-#haciendo {
-	background-color: #000000;
-
+	color: #ffffff;
+	text-shadow: 1px 1px 1.5px #dbdbdb;
 }
 
 .three {
@@ -222,22 +207,24 @@ h2 {
 
 .three p {
 	text-align: center;
-	font-size: 16px;
-	color: #ebe3dd;
+	font-size: 17px;
+	color: #ffffff;
 	margin-bottom: 35px;
+	text-shadow: 1px 1px 1.5px #dbdbdb;
 
 }
 
 .three p a {
-	font-size: 16px;
+	font-size: 17px;
 	text-decoration: underline;
-	color: #ebe3dd;
+	color: #ffffff;
+	text-shadow: 2px 2px 1.5px #dbdbdb;
 }
 
 .two i {
 	font-size: 85px;
-	color: #ebe3dd;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2) ;
+	color: #ffffff;
+	text-shadow: 2px 2px 1.5px #dbdbdb;
 	margin-left: 50%;
 }
 
@@ -255,8 +242,9 @@ footer {
 
 footer i {
 	float: left;
-	color: #ebe3dd;
+	color: #45668f;
 	font-size: 30px;
     margin-left: 24px;
     margin-top: 15px;
+    text-shadow: 2px 2px 1.5px #dbdbdb;
 }
