@@ -1,6 +1,7 @@
 body {
 	margin: 0 auto;
-	background-color: #000000;
+	background-image: url(food.png);
+	background-repeat: repeat;
 }
 
 header {
