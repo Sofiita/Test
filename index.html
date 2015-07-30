@@ -24,13 +24,13 @@
 					<li>
 						<a href="#haciendo">Implementando..</a>
 					</li>					
-				</ul>	
+				</ul>
 			</nav>
 		</header>
 		<section id="hero">
 			<div class="one">
 				<h1>Hola Pedidos Ya!</h1>
-				<p id="intro">Mi nombre es Sofia Heit, tengo 21 años y soy desarrolladora front-end hace dos años. Soy autodidacta, y me gusta aprender sobre nuevas tecnologias.
+				<p id="intro">Mi nombre es Sofia Heit, tengo 22 años y soy desarrolladora front-end hace dos años. Soy autodidacta, y me gusta aprender sobre nuevas prácticas. 
 					En mi tiempo libre me gusta cocinar, correr y escuchar música.</p>
 			</div>
 
@@ -82,6 +82,9 @@
 				<p>Poniendo en practica el uso de selectores de clases, de tipos y de elementos en las hojas de estilo css.</p>				
 			</div>
 		</section>
+
+		<div id="map-canvas"></div>
+
 		<footer>
 			<div class="one">
 				<div id="contact">
@@ -94,72 +97,18 @@
 		</footer>
 
 	</body>
-
-	<script type="text/javascript">
-
-		$(document).ready(function () {
-	    $("a#registrarse").on('click', function () {
-	        $("#bgpopUp").fadeIn(500, function () {
-	            $("#bgpopUp").css('display', 'block');
-	            $('#registrarme').fadeIn(500);
-	            window.scrollTo(0, 0);
-	            disableScroll()
-			});
-	    });
-
-		function closePopup() {
-			$('#bgpopUp').fadeOut(500);
-			$('#registrarme').fadeOut(500);
-			enableScroll();
-		}
-
-		$('#cerrar').on('click', closePopup);
-		$('#bgpopUp').on('close', closePopup)
-
-	});
-
-	function disableScroll() {
-		window.scrollBackup = window.onscroll;
-		window.onscroll = function () { window.scrollTo(0, 0); };
-	}
-
-	function enableScroll() {
-		window.onscroll = window.scrollBackup;
-	}
-
-	 $('form#registrarme').on('submit', function () {
-	          var usuario = {};
-	          var datos = $(this).serializeArray();
-	          for(var i in datos) {
-	            usuario[datos[i].name] = datos[i].value;
-	          }
-
-	          guardarUsuario(usuario);
-
-	          $('#bgpopUp').trigger('close');
-	          init();
-
-	          return false;
-	        });
-
-	        function init() {
-	          if(obtenerUsuario()) {
-	            $("a#registrarse").hide();
-	            
-	          }
-	        }
-
-	        init();
-
-	      });
-
-	      $('a.smooth').on('click', function(e) {
-	        var $link = $(this);
-	        var anchor  = $link.attr('href');
-	        $('#registrarme').stop().animate({
-	          scrollTop: $(anchor).offset().top
-	        }, 1000);
-	      });
-	      
-	</script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AAIzaSyA6eUK-GN8w_wPwNKD2uXOAWeL1_wxokn8">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: -34.397, lng: 150.644},
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </html>

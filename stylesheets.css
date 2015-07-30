@@ -262,3 +262,7 @@ footer i {
 footer a i:hover {
 	color:#FAC564;
 }
+
+#mapa {
+	min-height: 200px;
+}
