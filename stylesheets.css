@@ -41,6 +41,11 @@ nav ul li a:hover {
 	color:#FAC564;
 }
 
+a {
+	color: #45668f;
+	text-decoration: none;
+}
+
 #logo {
 	float: left;
 	color: #45668f;
