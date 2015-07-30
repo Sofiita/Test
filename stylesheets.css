@@ -263,6 +263,8 @@ footer a i:hover {
 	color:#FAC564;
 }
 
-#mapa {
-	min-height: 200px;
+iframe {
+    border: medium none;
+    margin-left: 30%;
+    padding: 10px;
 }
